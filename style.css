@@ -18,7 +18,7 @@
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(image.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../image.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -43,7 +43,7 @@ h1 {
 .logo a {
     text-decoration: none;
 }
-span {
+.logo span {
     color: rgb(230,0,0);
 }
 
@@ -137,6 +137,154 @@ span {
     transition: .4s;
     transform: translateX(75%);
 }
+.login-card-container {
+    width: 450px;
+    padding: 4rem;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    background: rgba(27, 17, 17, .3);
+    border-radius: 10px;
+}
+
+.login-card {
+    display: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin: 0px 0px 30px;
+    font-size: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 10%;
+    font-weight: bold;
+}
+.form-box {
+    position: relative;
+}
+.form-item {
+    position: relative;
+}
+.form-item input {
+    width: 100%;
+    padding: 10px 0px;
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.form-item label {
+    position: absolute;
+    color: var(--primary-color);
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    pointer-events: none;
+    transition: .4s;
+}
+.form-item input:focus ~ label{
+    color: rgb(230,0,0);
+    transition: .4s;
+}
+.form-item input:focus ~ label,
+.form-item input:valid ~ label{
+    font-size: 14px;
+    top: -20px;
+    transition: .4s;
+}
+.form-item-other{
+    align-items: center;
+    justify-items: auto;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.checkbox {
+    padding: 10px 0px;
+}
+.checkbox input{
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-color);
+    border: none;
+    outline: none;
+    transition: .4s;
+}
+
+.checkbox label{
+    color: var(--primary-color);
+    top: 0px;
+    left: 0px;
+    font-weight: bold;
+    transition: .4s;
+}
+.checkbox input:checked~label{
+    color: rgb(230,0,0);
+    transition: .4s;
+}
+.forgotPWD {
+    display: inline-flex;
+    align-content: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: .4s;
+}
+
+.forgotPWD:hover {
+    color: rgb(230,0,0);
+    transition: .4s;
+}
+
+.submite {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    background: rgb(230,0,0);
+    padding: 0.8rem 0.8rem;
+    border-radius: 100px;
+    transition: .4s;
+}
+
+.submite:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: .4s;
+    box-shadow: 0 0 5px rgb(230,0,0),
+    0 0 25px rgb(230,0,0);
+}
+
+.RegisterText {
+    display: flex;
+    margin-top: 20px;
+    color: var(--primary-color);
+    transition: .4s;
+}
+.RegisterLink {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: .4s;
+}
+
+.RegisterLink:hover{
+    color: rgb(230,0,0);
+    transition: .4s;
+}
+
+
 .texto {
     color: var(--primary-color);
     transition: .4s;
